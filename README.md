@@ -1,2 +1,2 @@
 # Axon
-A beautiful and seamless LaTeX template
+A minimal, state-of-the-art LaTeX class
