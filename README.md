@@ -1,5 +1,4 @@
-# Axon
-## A minimal, state-of-the-art academic journal template
+# Axon: A minimal, state-of-the-art academic journal template
 
 ### Specifications:
 * Typeface:      Avenir Next
