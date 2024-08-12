@@ -17,6 +17,7 @@
     graphicx,                   % For inserting images
     geometry,                   % For formatting
     amsmath,                    % For mathematical facilities
+    amsthm,                     % For mathematical environments
     gradient-text,              % For text color gradients
     biblatex,                   % For bibliography
     hyperref                    % For cross-referencing
@@ -31,7 +32,9 @@
     margin = 10mm, % Margin Size [all]: 10mm
     includefoot
 }
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Authors %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\authors}[1]{
     \author{#1}
 }
@@ -42,6 +45,16 @@
     \vspace{1em}\\
 }
 
+\newcommand{\makeauthor}{
+    {
+        \raggedright
+        \@author\par
+    }
+    \setlength{\parindent}{1.5em} % Reset paragraph indent after author
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\maketitle}{
     {
         \raggedright
@@ -53,16 +66,9 @@
     }
     \setlength{\parindent}{1.5em} % Reset paragraph indent after title
 }
-
-\newcommand{\makeauthor}{
-    {
-        \raggedright
-        \@author\par
-    }
-    \setlength{\parindent}{1.5em} % Reset paragraph indent after author
-}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% Abstract %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\abstractname}{
     \LARGE\bfseries Abstract
 }
@@ -75,3 +81,15 @@
     }
     \setlength{\parindent}{1.5em} % Reset paragraph indent after abstract
 }{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Environments %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+
+\renewenvironment{example}{
+  \vspace{6pt}\noindent\refstepcounter{example}%
+  \textbf{Example \theexample.}\mbox{}\\
+}{
+  \vspace{6pt}
+}
