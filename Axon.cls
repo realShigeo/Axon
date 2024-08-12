@@ -43,23 +43,35 @@
 }
 
 \renewcommand{\maketitle}{
-    \raggedright{
+    {
+        \raggedright
         \Huge\bfseries\expanded{
             \noexpand\gradientRGB{\@title}{0, 25, 255}{200, 0, 255}
         }
         \vskip 0.5em
+        \par
     }
+    \setlength{\parindent}{1.5em} % Reset paragraph indent after title
 }
 
 \newcommand{\makeauthor}{
-    \@author\par
+    {
+        \raggedright
+        \@author\par
+    }
+    \setlength{\parindent}{1.5em} % Reset paragraph indent after author
 }
+
 
 \renewcommand{\abstractname}{
     \LARGE\bfseries Abstract
 }
 
 \renewenvironment{abstract}{
-    \abstractname\par
-    \normalfont\normalsize
+    {
+        \raggedright
+        \abstractname\par
+        \normalfont\normalsize
+    }
+    \setlength{\parindent}{1.5em} % Reset paragraph indent after abstract
 }{}
