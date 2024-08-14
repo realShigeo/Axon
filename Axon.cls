@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% Axon - A minimal, state-of-the-art LaTeX template %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Author: Jeffrey G. Lind III [jeffrey@jeffreylind.dev] %%%
@@ -11,16 +11,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% Preliminary Declarations %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\LoadClass{article}             % For article inheritance
+\LoadClass{article} % For article inheritance
 
 \RequirePackage{
-    graphicx,                   % For inserting images
-    geometry,                   % For formatting
-    amsmath,                    % For mathematical facilities
-    amsthm,                     % For mathematical environments
-    gradient-text,              % For text color gradients
-    biblatex,                   % For bibliography
-    hyperref                    % For cross-referencing
+    graphicx,      % For inserting images
+    geometry,      % For formatting
+    amsmath,       % For mathematical facilities
+    amsthm,        % For mathematical environments
+    gradient-text, % For text color gradients
+    biblatex,      % For bibliography
+    hyperref,      % For cross-referencing
+    xcolor         % For text coloring
 }
 
 \RequirePackage[T1]{fontenc}    % For font encoding
