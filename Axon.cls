@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% Axon - A minimal, state-of-the-art LaTeX template %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Author: Jeffrey G. Lind III [jeffrey@jeffreylind.dev] %%%
@@ -7,7 +7,7 @@
 %%%%%%%%%%%%%%%%%%%%%%% Identification %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{Axon}[2024/08/11, 0.6, Axon LaTeX Class]
+\ProvidesClass{Axon}[2024/08/11, 0.10, Axon LaTeX Class]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% Preliminary Declarations %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -18,6 +18,7 @@
     geometry,      % For formatting
     amsmath,       % For mathematical facilities
     amsthm,        % For mathematical environments
+    amsfonts,      % For mathematical fonts
     gradient-text, % For text color gradients
     biblatex,      % For bibliography
     hyperref,      % For cross-referencing
