@@ -7,7 +7,7 @@
 %%%%%%%%%%%%%%%%%%%%%%% Identification %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{Axon}[2024/08/11, 0.10, Axon LaTeX Class]
+\ProvidesClass{Axon}[2024/08/11, 0.11, Axon LaTeX Class]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% Preliminary Declarations %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -19,6 +19,7 @@
     amsmath,       % For mathematical facilities
     amsthm,        % For mathematical environments
     amsfonts,      % For mathematical fonts
+    amssymb,       % For mathematical symbols
     gradient-text, % For text color gradients
     biblatex,      % For bibliography
     hyperref,      % For cross-referencing
