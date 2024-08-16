@@ -1,4 +1,4 @@
-# Axon: A minimal, state-of-the-art academic journal template
+# Axon: A minimal, state-of-the-art LaTeX class
 
 <img src="/Template/AxonFirstPage.jpg" alt="Axon First Page" width="300"/>
 <img src="/Template/AxonSecondPage.jpg" alt="Axon Second Page" width="300"/>
