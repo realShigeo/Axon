@@ -7,7 +7,7 @@
 %%%%%%%%%%%%%%%%%%%%%%% Identification %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{Axon}[2024/08/11, 0.11, Axon LaTeX Class]
+\ProvidesClass{Axon}[2024/08/11, 0.13, Axon LaTeX Class]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% Preliminary Declarations %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,12 +87,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%% Environments %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\theoremstyle{definition}
 \newtheorem{example}{Example}[section]
+\newtheorem{definition}{Definition}[section]
 
 \renewenvironment{example}{
   \vspace{6pt}\noindent\refstepcounter{example}%
   \textbf{Example \theexample.}\mbox{}\\
+}{
+  \vspace{6pt}
+}
+
+\renewenvironment{definition}{
+  \vspace{6pt}\noindent\refstepcounter{definition}%
+  \textbf{Definition \thedefinition.}\mbox{}\\
 }{
   \vspace{6pt}
 }
